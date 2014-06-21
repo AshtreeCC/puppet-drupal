@@ -1,5 +1,7 @@
 class drupal::install {
-
+	package { 'drush':
+		ensure => installed
+	}
 }
 
 class drupal::configure {
